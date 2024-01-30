@@ -18,7 +18,7 @@ resource "aws_subnet" "public-web-a" {
     Name = "Public Web a"
   }
 }
-resource "aws_subnet" "pulic-web-c" {
+resource "aws_subnet" "public-web-c" {
   vpc_id     = aws_vpc.groomVPC.id
   cidr_block = "10.0.2.0/24"
   availability_zone =  "ap-northeast-2c"
