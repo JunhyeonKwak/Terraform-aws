@@ -30,17 +30,18 @@ resource "aws_lb" "web-lb" {
   internal           = false
   load_balancer_type = "application"
   subnets = [aws_subnet.public-web-a.id,aws_subnet.public-web-c.id]
+  security_groups = [aws_security_group.web_security.id]
 
   tags = {
     Environment = "production"
   }
 }
 
-# App NLB 생성
+# App ALB 생성
 resource "aws_lb" "app-lb" {
   name               = "App-lb"
   internal           = true
-  load_balancer_type = "network"
+  load_balancer_type = "application"
   subnets = [aws_subnet.private-app-a.id,aws_subnet.private-app-c.id]
 
   tags = {
