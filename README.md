@@ -7,3 +7,5 @@ Terraform/Ansible 중 하나의 IaC 도구를 선택하여 제시된 AWS 위 설
 
 ![____________________________720](https://github.com/JunhyeonKwak/Terraform-aws/assets/127921796/8f8b6395-6cde-47d2-a88d-aa172d932d7f)
 
+## 관련 풀이
+https://awake-cello-c5d.notion.site/AWS-IaC-f99c75a115b3408d97668db2d1f53003?pvs=4
