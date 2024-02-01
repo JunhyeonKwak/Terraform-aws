@@ -11,6 +11,7 @@ resource "aws_launch_template" "app-foobar" {
   name_prefix   = "foobar"
   image_id      = "ami-09eb4311cbaecf89d"
   instance_type = "t2.micro"
+  vpc_security_group_ids = [aws_security_group.app_security.id]
 }
 
 # web Auto Scaling 그룹 생성

@@ -36,3 +36,23 @@ resource "aws_security_group" "web_security" {
     Name = "web_security"
   }
 }
+
+resource "aws_security_group" "app_security" {
+  name        = "app_security"
+  vpc_id      = aws_vpc.groomVPC.id
+
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/24","10.0.1.0/24"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]  // 모든 아웃바운드 트래픽 허용
+  }
+
+}

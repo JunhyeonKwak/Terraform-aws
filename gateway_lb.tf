@@ -43,6 +43,7 @@ resource "aws_lb" "app-lb" {
   internal           = true
   load_balancer_type = "application"
   subnets = [aws_subnet.private-app-a.id,aws_subnet.private-app-c.id]
+  security_groups = [aws_security_group.app_security.id]
 
   tags = {
     Environment = "production"
