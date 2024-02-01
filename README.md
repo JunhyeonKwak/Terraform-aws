@@ -5,4 +5,5 @@ Terraform/Ansible 중 하나의 IaC 도구를 선택하여 제시된 AWS 위 설
 - 제출 방법: 작성된 IaC 코드를 제출합니다.
 - 참고 이미지
 
-![아키텍처.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/cdde29be-131b-4b0a-a722-bb46272a634a/3fd9e7f9-4ed0-49db-a15c-71328ef013e7/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.jpeg)
+![____________________________720](https://github.com/JunhyeonKwak/Terraform-aws/assets/127921796/8f8b6395-6cde-47d2-a88d-aa172d932d7f)
+
